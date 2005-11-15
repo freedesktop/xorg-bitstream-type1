@@ -19,7 +19,6 @@
 #  NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
 #  CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-FONT_DIR = Type1
 FONT_FILES = \
 	c0419bt_.afm \
 	c0419bt_.pfb \
@@ -38,7 +37,7 @@ FONT_FILES = \
 	c0649bt_.afm \
 	c0649bt_.pfb
 
-fontdir = $(libdir)/X11/fonts/$(FONT_DIR)
+fontdir = @FONTDIR@
 font_DATA = $(FONT_FILES)
 
 EXTRA_DIST = $(FONT_FILES) Copyright autogen.sh
